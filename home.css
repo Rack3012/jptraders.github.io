@@ -1,15 +1,11 @@
 *{
     padding: 0;
     margin : 0;
-    text-decoretion: none;
     list-style: none;
     box-sizing:border-box;
   }
 body{
    font-family: montserrat;
-   background-color{
-    <img src= "img1.jpg"> </img>
-   };
    }
 nav{
 background: white;
@@ -19,22 +15,35 @@ width: 100%;
 
 .image
 {
-
 margin-left: 50px;
+margin-top: 12px;
 line-height: -8px;
 margin-top: 5px;
 }
+
 .image2{
  margin-left: .35%;
 line-height: -16%;
 margin-bottom: 1.5%;
-<!--  margin-top: 5px;-->
+
 }
 
 nav ul{
   float: right;
-  margin-right: 20px;
   }
+
+.bar{
+  float: right;
+  margin-top: -45px;
+  margin-right: 10px;
+  display: none;
+}
+
+.fa-solid, .fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 30px;
+}
 
 nav ul li{
   display: inline-block;
@@ -45,8 +54,8 @@ nav ul li{
   nav ul li a{
   color: black;
   font-size: 17px;
-  border-radius: 3px;
-  padding: 7px 13px;
+  border-radius: 30px;
+  padding: 10px 13px;
   }
 
 
@@ -56,33 +65,107 @@ nav ul li{
 
 
 
-#slider{
- overflow: hidden;
- }
-
- #slider figure {
-    position:relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 30s slider infinite;
+   #slider{
+    overflow: hidden;
     }
+   
+    #slider figure {
+       position:relative;
+       width: 500%;
+       margin: 0;
+       left: 0;
+       animation: 30s slider infinite;
+       }
+   
+       #slider figure img{
+       width: 20%;
+       height: 100%;
+       float:left;
+       }
+   
+        @keyframes slider{
+      0%{left:0%}
+      20%{left: 0}
+      25%{left: -100%}
+      45%{left: -100%}
+      50%{left: -200%}
+      70%{left: -200%}
+      75%{left: -300%}
+      95%{left: -300%}
+      100%{left: -400%}
+        }
+   
+  @media screen and (min-width: 574px) and (max-width: 960px)
+{
+  nav .menu-bar li a{
+    display: none;
+  }
 
-    #slider figure img{
-    width: 20%;
-    height: 100%;
-    float:left;
-    }
+  .bar{
+    display: flex;
+  }
 
-     @keyframes slider{
-   0%{left:0%}
-   20%{left: 0}
-   25%{left: -100%}
-   45%{left: -100%}
-   50%{left: -200%}
-   70%{left: -200%}
-   75%{left: -300%}
-   95%{left: -300%}
-   100%{left: -400%}
-     }
+  .image{
+   width: 120px;
+   margin-left: 10px;
+  }
+  .image2{
+    width: 350px;
+    margin-bottom: 17px;
+    margin-left: -10px;
+  }
+  #slider figure{
+    /* width: 300px; */
+    height: 90vh;
+  }
+  #slider figure img{
+    margin-top: 0.2%;
+    /* display: none; */
+  }
+}
+
+@media screen and (max-width: 573px){
+  nav .menu-bar{
+    display: none;
+  }
+
+  .menu-bar{
+    width: none;
+  }
+
+  /* .bar:hover .menu-bar{
+      display: flex;
+    } */
+  
+
+  .bar{
+    display: flex;
+    margin-top: -35px;
+  }
+  .fa-solid, .fas {
+    font-size: 20px;
+  }
+  .image{
+   width: 70px;
+   margin-top: 10px;
+   margin-left: 10px;
+  }
+  .image2{
+    width: 230px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+  }
+  #slider figure{
+    height: 90vh;
+  }
+  nav{
+    /*     background:aqua; */
+         height: 60px
+      }
+  #slider figure img{
+    margin-top: 0.2%;
+    /* display: none; */
+  }
+}
+
 
