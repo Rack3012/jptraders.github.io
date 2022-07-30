@@ -1,1 +1,1 @@
-# This website is made to familarize you the pawer of trading platform
+# This website is made to familarize you the power of trading platform
